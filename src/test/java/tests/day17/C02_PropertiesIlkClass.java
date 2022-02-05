@@ -21,7 +21,9 @@ public class C02_PropertiesIlkClass {
         Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
         HotelMyCampPage hotelMyCampPage = new HotelMyCampPage();
         hotelMyCampPage.ilkLoginButton.click();
-        hotelMyCampPage.usernameBox.sendKeys("manager",Keys.TAB,"Manager1!");
+        hotelMyCampPage.usernameBox
+        .sendKeys(ConfigReader.getProperty("HMCValidUsername"),Keys.TAB,"HMCValidPassword");
+
         hotelMyCampPage.loginButton.click();
 
         Assert.assertTrue(hotelMyCampPage.managerButton.isEnabled());
