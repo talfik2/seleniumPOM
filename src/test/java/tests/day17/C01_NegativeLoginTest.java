@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.MyHotelCampPage;
+import pages.HotelMyCampPage;
 import utilities.Driver;
 
 public class C01_NegativeLoginTest {
@@ -17,7 +17,7 @@ public class C01_NegativeLoginTest {
     //	test data password : manager1!
     //	Degerleri girildiginde sayfaya girilemedigini test et
 
-    MyHotelCampPage myHotelCampPage = new MyHotelCampPage();
+    HotelMyCampPage myHotelCampPage = new HotelMyCampPage();
     @Test
     public void negativeTestLogin() throws InterruptedException {
         //		 https://www. hotelmycamp.com/ adresine git

@@ -1,15 +1,14 @@
 package tests.day16;
 
-import org.checkerframework.checker.units.qual.Acceleration;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import pages.MyHotelCampPage;
+import pages.HotelMyCampPage;
 import utilities.Driver;
 
 public class C04_HotelMyCampPositiveTest {
 
-    MyHotelCampPage myHotelCampPage = new MyHotelCampPage();
+    HotelMyCampPage myHotelCampPage = new HotelMyCampPage();
     @Test
     public void test01() {
         Driver.getDriver().get("https://www.hotelmycamp.com/");
