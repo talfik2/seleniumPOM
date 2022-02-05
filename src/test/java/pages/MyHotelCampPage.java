@@ -19,5 +19,8 @@ public class MyHotelCampPage {
 
     @FindBy(xpath = "//input[@value='Log in']")
     public WebElement loginButton;
+
+    @FindBy(xpath = "//span[text()='Try again please']")
+    public WebElement incorrectPassword;
 }
 
