@@ -14,7 +14,7 @@ public class C04_HotelMyCampPositiveTest {
         Driver.getDriver().get("https://www.hotelmycamp.com/");
         myHotelCampPage.ilkLoginButton.click();
 
-        Actions actions = new Actions(Driver.driver);
+        Actions actions = new Actions(Driver.getDriver());
 
         actions.click(myHotelCampPage.usernameBox)
                 .sendKeys("manager")

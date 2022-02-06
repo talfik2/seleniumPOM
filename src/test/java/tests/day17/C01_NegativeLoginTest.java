@@ -24,7 +24,7 @@ public class C01_NegativeLoginTest {
         Driver.getDriver().get(" https://www.hotelmycamp.com/");
         //		login butonuna bas
         myHotelCampPage.ilkLoginButton.click();
-        Actions actions = new Actions(Driver.driver);
+        Actions actions = new Actions(Driver.getDriver());
         actions.click(myHotelCampPage.usernameBox)
                 .sendKeys("manager1")
                 .sendKeys(Keys.TAB)
