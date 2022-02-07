@@ -27,16 +27,15 @@ public class HMCWebTablePage {
     public List<WebElement> satirlarListesi;
 
 
-    public WebElement satirGetir(int satirNo){
 
-
+    public void satirYazdir(int satirNo) {
         // 2.satiri yazdir  //tbody//tr[2]
         // 7.satiri yazdir //tbody//tr[7]
 
-        String satirDinamikXpath= "//tbody//tr["+ satirNo +"]";
-        WebElement satirElementi=Driver.getDriver().findElement(By.xpath(satirDinamikXpath));
+        String satirYaz= "//tbody//tr["+satirNo+"]";
+        String satirGetir=Driver.getDriver().findElement(By.xpath(satirYaz)).getText();
 
-        return satirElementi;
+        System.out.println(satirGetir);
     }
 
 
@@ -44,11 +43,12 @@ public class HMCWebTablePage {
         // 2.satirin 4.datasi   //tbody//tr[2]//td[4]
         // 4.satirin 5.datasi   //tbody//tr[4]//td[5]
 
-        String dinamikHucreXpath="//tbody//tr["+ satir  +"]//td["+ sutun  +"]";
-        WebElement istenenHucreElementi=Driver.getDriver().findElement(By.xpath(dinamikHucreXpath));
-        String hucreDatasi=istenenHucreElementi.getText();
+        String path ="//tbody//tr["+satir+"]//td["+sutun+"]";
+        String hucreBilgisi = Driver.getDriver().findElement(By.xpath(path)).getText();
 
-        return hucreDatasi;
+
+
+       return hucreBilgisi;
     }
 
     public void sutunYazdir(int sutun) {
