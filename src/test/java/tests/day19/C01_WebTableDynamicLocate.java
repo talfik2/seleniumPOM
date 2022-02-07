@@ -34,6 +34,14 @@ public class C01_WebTableDynamicLocate {
         System.out.println(hmcWebTablePage.hucreWebelementGetir(3, 5));
         Driver.closeDriver();
     }
+    @Test
+    public void Test03() {
+        hotelMyCampPage=new HotelMyCampPage();
+        hmcWebTablePage= new HMCWebTablePage();
 
+        hotelMyCampPage.girisyap();
+        // 3.method sutun numarasi verildiginde tum sutunu yazdirsin
+        hmcWebTablePage.sutunYazdir(3);
+    }
 
 }
