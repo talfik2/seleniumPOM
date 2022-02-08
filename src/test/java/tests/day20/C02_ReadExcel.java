@@ -17,8 +17,8 @@ public class C02_ReadExcel {
         // ulkeler excel inin 3 satirini yazdirin
         String path="src/test/java/Resorses/ulkeler.xlsx";
         FileInputStream fis = new FileInputStream(path);
-
         Workbook workbook = WorkbookFactory.create(fis);
+
         for (int i=0 ; i<4 ; i++){
 
             System.out.print(workbook.getSheet("Sayfa1").getRow(2).getCell(i)+" ");
