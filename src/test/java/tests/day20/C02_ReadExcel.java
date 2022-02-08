@@ -25,9 +25,7 @@ public class C02_ReadExcel {
         }
         System.out.println();
 
-        C03_ReadExcelReusableMethods obj = new C03_ReadExcelReusableMethods();
-        System.out.println("\n=====================");
-        obj.exceldenSatirYazdir(2);
+
         System.out.println("\n=====================");
         //ilk 20 ulkenin baskentlerinin Turkce isimlerini yazdirin
 
@@ -35,8 +33,6 @@ public class C02_ReadExcel {
 
             System.out.println(i+" "+workbook.getSheet("Sayfa1").getRow(i).getCell(3));
         }
-        System.out.println("\n=====================");
 
-        obj.sutunAraligiYazdir(20,3);
     }
 }
