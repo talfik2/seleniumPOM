@@ -3,7 +3,7 @@ package tests.day20;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class C03_ResuableRunners {
+public class C03_ReusableRunner  {
     @Test
     public void test01(){
 
