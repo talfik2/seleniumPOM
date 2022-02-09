@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli test methodlarini calistirma">
+    <test name="otel">
+        <classes>
+            <class name="tests.day18.C02_WebTables">
+                <methods>
+                    <include name="loginT"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

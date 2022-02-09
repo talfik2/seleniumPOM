@@ -17,9 +17,10 @@ public class PositiveLoginTest {
     //test data password : Manager1!
     //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
 
-    HotelMyCampPage hotelMyCampPage = new HotelMyCampPage();
+    HotelMyCampPage hotelMyCampPage;
     @Test
     public void positiveLoginTest() {
+        hotelMyCampPage = new HotelMyCampPage();
         Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
         hotelMyCampPage.ilkLoginButton.click();
         hotelMyCampPage.usernameBox.sendKeys(ConfigReader.getProperty("HMCValidUsername"), Keys.TAB,ConfigReader.getProperty("HMCValidPassword"));
