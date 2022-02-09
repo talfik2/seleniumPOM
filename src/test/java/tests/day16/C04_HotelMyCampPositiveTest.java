@@ -8,10 +8,12 @@ import utilities.Driver;
 
 public class C04_HotelMyCampPositiveTest {
 
-    HotelMyCampPage myHotelCampPage = new HotelMyCampPage();
-    @Test
+    HotelMyCampPage myHotelCampPage ;
+    @Test(groups = "miniRegression")
     public void test01() {
+
         Driver.getDriver().get("https://www.hotelmycamp.com/");
+        myHotelCampPage = new HotelMyCampPage();
         myHotelCampPage.ilkLoginButton.click();
 
         Actions actions = new Actions(Driver.getDriver());
@@ -23,6 +25,7 @@ public class C04_HotelMyCampPositiveTest {
                 .perform();
 
         myHotelCampPage.loginButton.click();
+        Driver.closeDriver();
     }
 
 }
