@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Rapor Calistirma">
+    <test name="rapoor">
+        <classes>
+            <class name="tests.day22.C02_FacebookTesti"/>
+            <class name="tests.day22.C01_TestNGReports"/>
+        </classes>
+    </test>
+</suite>

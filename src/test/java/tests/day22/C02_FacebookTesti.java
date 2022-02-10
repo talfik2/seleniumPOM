@@ -30,7 +30,6 @@ public class C02_FacebookTesti extends TestBaseRapor {
 
         Assert.assertTrue(facebookPage.girilemediYazisiElemnti.isDisplayed());
         extentTest.pass("Yanlis email ve sifre ile giris yapilamadi");
-        Thread.sleep(5000);
-        Driver.closeDriver();
+
     }
 }
