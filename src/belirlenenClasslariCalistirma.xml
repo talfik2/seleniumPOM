@@ -2,9 +2,9 @@
 <suite name="belirli classlar">
     <test name="classlar">
         <classes>
-            <class name="tests.day19.C02_WebTableDemoQa"></class>
-            <class name="tests.day18.C02_WebTables"></class>
-            <class name="tests.day17.C01_NegativeLoginTest"></class>
+            <class name="tests.day19.C02_WebTableDemoQa"/>
+            <class name="tests.day18.C02_WebTables"/>
+            <class name="tests.day17.C01_NegativeLoginTest"/>
         </classes>
     </test>
 </suite>

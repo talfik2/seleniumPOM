@@ -1,4 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--belirlenen gruplari calistirmadan once istedigimiz testmethod'larina
+ belirledigimiz grup ismlerini eklemeliyiz
+ bir test method'unun birden fazla grubu olabilir
+ Gruplari calistirirken 2 kriterimiz var
+ 1- hangi gruplar include veya exclude olacak
+ 2- bu gruplari nerede arayacagiz -->
 <suite name="belirli gruplari calistir">
    <test name="grup">
        <groups>
