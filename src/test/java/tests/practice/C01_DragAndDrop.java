@@ -25,7 +25,7 @@ public class C01_DragAndDrop {
         p1_demoGuruPage = new P1_demoGuruPage();
         Driver.getDriver().get(ConfigReader.getProperty("DemoGuruUrl"));
 
-       Thread.sleep(4000);
+
 
         Actions actions = new Actions(Driver.getDriver());
         actions.dragAndDrop(p1_demoGuruPage.bankButonu, p1_demoGuruPage.debitsideAccount).
