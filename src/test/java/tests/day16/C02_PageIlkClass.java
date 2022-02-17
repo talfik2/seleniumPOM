@@ -30,7 +30,7 @@ public class C02_PageIlkClass {
 
     @Test
     public void test02() {
-        // amazona gidelim
+        // amazona gidelimm
         Driver.getDriver().get("https://www.amazon.com");
         //java icin arama yapalim
         AmazonPage amazonPage = new AmazonPage();
